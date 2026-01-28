@@ -24,3 +24,44 @@
 ### XNOR
 - outputs true if inputs are the same
 
+## Number Systems
+
+### Common NUmber Systems
+- Base 10 (0-9); Counting
+- Base 12 (0-11); Time
+- Base 8 (0-7); Simplify Binary
+- Base 16 (0-15,A-F); Hexadecimal
+- Base 2 (0-1); Binary
+
+
+### Converting Systems:
+- Binary >> Base 10
+    - multiply each bit by 2^n
+    - 1010 in Binary is 10 in base 10
+    - (1*2^3) + (0*2^2) + (1*2^1) + (0*2^0)
+
+- Binary >> Hex
+    - starting at the right most digit, group bits into fours.  Then convert each group into hex
+    - 1010111110010 in binary is AF2 in Hex
+    - 1010 1111 0010 >> AF2
+
+- Base 10 >> Binary
+    - divide the number by two and record the remainders
+    - 10/2 = 5r0
+    - 5/2 = 2r2
+    - 2/2 = 1r0
+    - 1/2 = 0r1
+    - write the number from the bottom up this result is 1010
+
+- Base 10 >> Hexadecimal
+    - divide the mnumber by 16
+    - record the remainders
+    - convert remainders above 9 to A-F
+    - right the new number from the bottom up
+    - 254 base 10 >> hex
+    -245/16 = 15r14 (14 is E)
+    -15/16= 0r15 (15 is F)
+    - result is FE
+
+- Hex >> Base 10
+    - multiply each digit by 16^n where n is the position from the right
