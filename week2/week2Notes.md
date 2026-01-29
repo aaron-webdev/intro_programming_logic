@@ -65,3 +65,11 @@
 
 - Hex >> Base 10
     - multiply each digit by 16^n where n is the position from the right
+
+
+### Practice Problems
+1. 10110110 (2) >> Decimal and Hex
+2. 7C (16) >> Binary and Decimal
+3. 346 (10) Binary and Hex
+4. 111100001111 (2) Hex and Decimal
+5. 9A (16) Binary and Decimal
