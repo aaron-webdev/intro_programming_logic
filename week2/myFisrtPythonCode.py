@@ -23,4 +23,4 @@
 # name = f"{lastName}, {firstName}"
 
 # when adding string and numbers together use "str()" to make the number a string data type
-
+# when using the print function, sep='' will add a given character between values of he variables
