@@ -9,6 +9,10 @@ calcMinutes = 0
 
 print("How far is your trip (in miles)?")
 userDistance = input()
-print("How fast will you be driving?")
+print("How fast will you be driving (in miles per hour)?")
 userSpeed = input()
 
+calcHours = userDistance // userSpeed
+calcMinutes = userDistance % userSpeed
+
+print("Your trip will take {calcHours} hours and {calcMinutes} minutes.")
