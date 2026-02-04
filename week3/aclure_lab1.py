@@ -15,6 +15,7 @@ print("How fast will you be driving (to the nearest mile per hour)?")
 userSpeed = int(input()) # force variable to float
 if userSpeed == 0 or userDistance == 0:   # avoid infiinte computations
     print("Try again.  Enter only non-zero values.")
+    exit() #kill current run
 
 calcHours = userDistance // userSpeed
 milesRemaining = userDistance % userSpeed # 
