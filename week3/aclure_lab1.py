@@ -6,14 +6,18 @@ userDistance = 0
 userSpeed = 0
 calcHours = 0
 calcMinutes = 0
+milesRemaining = 0
 
 print("How far is your trip (in miles)?")
-userDistance = int(input())
+userDistance = int(input()) # accept user input
 print("How fast will you be driving (in miles per hour)?")
-userSpeed = int(input())
+userSpeed = int(input()) # accept user input
+if userSpeed == 0 or userDistance == 0:   # avoid infiinte computations
+    print("Try again.  Enter only non-zero values.")
 
 calcHours = userDistance // userSpeed
-calcMinutes = userDistance % userSpeed
+milesRemaining = userDistance % userSpeed # 
+calcMinutes = (milesRemaining * 60) // userSpeed
 
 print("Your trip will take")
 print("Hours: ", calcHours)
