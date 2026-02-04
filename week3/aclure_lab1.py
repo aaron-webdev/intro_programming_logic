@@ -9,7 +9,7 @@ calcHours = 0
 calcMinutes = 0
 milesRemaining = 0
 
-print("How far is your trip (tothe nearest miles)?")
+print("How far is your trip (to the nearest miles)?")
 userDistance = int(input()) # force variable to float
 print("How fast will you be driving (to the nearest mile per hour)?")
 userSpeed = int(input()) # force variable to float
