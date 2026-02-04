@@ -1,4 +1,5 @@
-# Travel Time Calculator 
+# Author:  Aaron Clure
+# Travel Time Calculator
 # This program will take user inputs for distance and speed and calculate the travel time.
 
 # intitialize variables and set to 0 to clear any unwated data
