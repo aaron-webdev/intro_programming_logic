@@ -10,9 +10,9 @@ calcMinutes = 0
 milesRemaining = 0
 
 print("How far is your trip (in miles)?")
-userDistance = int(input()) # accept user input
+userDistance = float(input()) # force user input into a float variable
 print("How fast will you be driving (in miles per hour)?")
-userSpeed = int(input()) # accept user input
+userSpeed = float(input()) # force user input into a float variable
 if userSpeed == 0 or userDistance == 0:   # avoid infiinte computations
     print("Try again.  Enter only non-zero values.")
 
