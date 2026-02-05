@@ -27,9 +27,19 @@
 # quotient = round((num1/num2), 3)
 # print(f"Quotient: {quotient}")
 
-print("\t Input lenght.")
+# print("\t Input lenght.")
+# num1 = (float(input()))
+# print("\t Input width.")
+# num2 = (float(input()))
+# area = round((num1*num2), 3)
+# print(f"The area is: {area} su")
+
+
+print("\t Input value one.")
 num1 = (float(input()))
-print("\t Input width.")
+print("\t Input value two.")
 num2 = (float(input()))
-area = round((num1*num2), 3)
-print(f"The area is: {area} su")
+print("\t Input value three.")
+num3 = (float(input()))
+average = round(((num1+num2+num3)/3),2)
+print(f"The average of the three values is: {average}")
