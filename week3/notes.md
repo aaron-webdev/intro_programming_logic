@@ -11,3 +11,7 @@
 - quantity = int(quantity)  # converts to integer
     - quantity = int(input("ENter the quantity: "))
 
+- USE print(f"outputMessage")
+    - this "formatted" print will allow use of variable literals {}
+
+
