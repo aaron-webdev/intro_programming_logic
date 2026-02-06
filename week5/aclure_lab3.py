@@ -34,3 +34,4 @@ print(f"\t Nickles:  {nick}")
 print(f"\t Pennies:  {penn}")
 
 # Ask if user wants to restart the program
+print("\t Continute? (y/n)")
