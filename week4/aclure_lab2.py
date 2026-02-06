@@ -1,3 +1,5 @@
+# Author: Aaron Clure
+# Letter Grade Converter
 # Create a program that will take a numerical input and convert that value to a leter grade
 
 # A - 90-100
@@ -8,8 +10,8 @@
 
 #Take and store user input
 print("\t Check your letter grade.")
-print("\t Input your number grade." )
-userGrade = round(float(input()),1)  # forces correct format to avoid errors
+print("\t Input your number grade (to the nearest tenth)." )
+userGrade = float(input())  # forces correct format to avoid errors
 
 #Assign and output letter grade based on numeric value
 if userGrade >= 90.0 :
