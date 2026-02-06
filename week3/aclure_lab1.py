@@ -18,7 +18,7 @@ if userSpeed == 0 or userDistance == 0:   # avoid infiinte computations
     exit() #kill current run
 
 calcHours = userDistance // userSpeed
-milesRemaining = userDistance % userSpeed # 
+milesRemaining = userDistance % userSpeed
 calcMinutes = (milesRemaining * 60) // userSpeed
 
 print("Your trip will take approximately")
