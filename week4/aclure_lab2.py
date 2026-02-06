@@ -9,18 +9,18 @@
 #Take and store user input
 print("\t Check your letter grade.")
 print("\t Input your number grade." )
-userGrade = float(input())
+userGrade = round(float(input()),1)  # forces correct format to avoid errors
 
-#Assign letter grade based on numeric value
+#Assign and output letter grade based on numeric value
 if userGrade >= 90.0 :
     print("\t Letter Grade:  A")
-elif userGrade >= 80.0 and userGrade <= 89.9 :
+elif userGrade >= 80.0 and userGrade < 90.0 :
     print("\t Letter grade:  B.")
-elif userGrade >= 70.0 and userGrade <= 79.9 :
+elif userGrade >= 70.0 and userGrade < 80.0 :
     print("\t Letter grade:  C.")
-elif userGrade >= 60.0 and userGrade <= 69.9 :
+elif userGrade >= 60.0 and userGrade < 70.0 :
     print("\t Letter grade:  D.")
 elif userGrade < 60.0 :
     print("\t Letter grade:  F.")
 else:
-    print("\t Enter a valid number value for the grade (Between 0 and 100)")
+    print("\t Enter a valid number value for the grade (Between 0.0 and 100.0)")
