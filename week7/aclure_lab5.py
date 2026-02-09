@@ -47,5 +47,4 @@ def main():
         print("\t Invalid input. Input A or B to make a selection.")
         askToRepeat()
 
-
 main() # Starts program
