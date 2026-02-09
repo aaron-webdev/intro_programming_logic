@@ -4,21 +4,21 @@
 
 def feetToMeters(userNum):
     newMeters = round(userNum * 0.3048,2)      # convert and return; 1ft = 0.3048m
-    print(f"\t {newMeters} meters.")
+    print(f"\t{newMeters} meters.")
     askToRepeat()
 
 def metersToFeet(userNum):
     newFeet = round(userNum * 3.28084,2)     # convert and return; 1m = 3.28084ft
-    print(f"\t {newFeet} feet.")
+    print(f"\t{newFeet} feet.")
     askToRepeat()
 
 def askToRepeat():
-    print("\t Would you like to perform another conversion? (Y/N)")       # Ask to continue
+    print("\tWould you like to perform another conversion? (Y/N)")       # Ask to continue
     goAgain = input()
     if goAgain == "Y" or goAgain == "y":
         main()
     else:
-        print("\t Thank you. Onward and upward!")
+        print("\tThank you. Onward and upward!")
         exit()
 
 
@@ -34,17 +34,17 @@ def main():
     print()
 
     if userChoice == "a" or userChoice == "A":
-        print("\t Number of feet?")
+        print("\tNumber of feet?")
         userNum = float(input())      # store and pass value
         feetToMeters(userNum)
 
     elif userChoice == "b" or userChoice == "B":
-        print("\t Number of meters?")
+        print("\tNumber of meters?")
         userNum = float(input())      # store and pass value
         metersToFeet(userNum)
 
     else:
-        print("\t Invalid input. Input A or B to make a selection.")
+        print("\tInvalid input. Input A or B to make a selection.")
         askToRepeat()
 
 main() # Starts program
