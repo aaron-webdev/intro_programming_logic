@@ -25,7 +25,7 @@ def askToRepeat():
 
 def main():
     print()
-    print("\t Feet and Meters Converter.")       # Ask the user for F >> M or F << M
+    print("\tFeet and Meters Converter.")       # Ask the user for F >> M or F << M
     print()
     print("\tConversions Menu:")
     print("\tA: Feet to meters.")
@@ -45,6 +45,7 @@ def main():
 
     else:
         print("\t Invalid input. Input A or B to make a selection.")
+        askToRepeat()
 
 
 main() # Starts program
