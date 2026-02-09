@@ -13,11 +13,12 @@ def metersToFeet(userNum):
     askToRepeat()
 
 def askToRepeat():
-    print("\t Would you like to continue? (Y/N)")       # Ask to continue
+    print("\t Would you like to perform another conversion? (Y/N)")       # Ask to continue
     goAgain = input()
     if goAgain == "Y" or goAgain == "y":
         main()
     else:
+        print("\t Thank you. Onward and upward!")
         exit()
 
 
