@@ -1,14 +1,33 @@
 # Author: Aaron Clure
+# Debugging the Tax Calculator
+# Debug the code.  Fix any errors.
 
-def sales_tax(total): # added :
-    sales_tax = total * 0.06 # changed to numeric value
-    newTotal = total + sales_tax # create new variable to store the new total
-    return newTotal # return the new calculated value
+# ORIGINAL CODE
+#>>>>>
+# !/usr/bin/env python3
+# TAX = 0.06
+# def sales_tax(total)
+#     sales_tax = total * tax
+#     return total
+# def main():
+#     print("Sales Tax Calculator\n")
+#     total = float(input("Enter total: "))
+#     total_after_tax = round(total + sales_tax(total), 2)
+#     print("Total after tax: ", total_after_tax)    
+# if __name__ == "__main__":
+#     main()
+#>>>>>
+# ORIGINAL CODE
+
+def sales_tax(total):               # Added :
+    sales_tax = total * 0.06        # Changed to numeric value.
+    newTotal = total + sales_tax    # Create new variable to store the new total.
+    return newTotal                 # Return the new calculated value.
 
 def main():
     print("Sales Tax Calculator\n")
     total = float(input("Enter total: "))
-    total_after_tax = round(sales_tax(total), 2) # call calculator function and pass user input, returns the new total
+    total_after_tax = round(sales_tax(total), 2) # Calls sales_tax function.  Rounds returned value to the hundreadths place.
     print("Total after tax: ", total_after_tax)
     
 main()
