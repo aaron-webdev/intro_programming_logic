@@ -12,9 +12,9 @@
 # Hyphenate the sentance [replace()].
 
 def main():
-    print(f"\t Enter a sentance:")
+    print(f"\t Enter a sentance: ")
     userPhrase = input()
-    print(F"\t Enter a word to count:")
+    print(F"\t Enter a word to count: ")
     trackWord = input()
 
 
