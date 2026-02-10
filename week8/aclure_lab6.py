@@ -27,7 +27,7 @@ def sales_tax(total):               # Added :
 def main():
     print("Sales Tax Calculator\n")
     total = float(input("Enter total: "))
-    total_after_tax = round(sales_tax(total), 2) # Calls sales_tax function.  Rounds returned value to the hundreadths place.
+    total_after_tax = round(sales_tax(total), 2)        # Calls sales_tax function.  Rounds returned value two places after the decimal point.
     print("Total after tax: ", total_after_tax)
     
-main()
+main()      # Calls main function to start program
