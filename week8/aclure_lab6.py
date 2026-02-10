@@ -1,3 +1,5 @@
+# Author: Aaron Clure
+
 def sales_tax(total): # added :
     sales_tax = total * 0.06 # changed to numeric value
     newTotal = total + sales_tax # create new variable to store the new total
