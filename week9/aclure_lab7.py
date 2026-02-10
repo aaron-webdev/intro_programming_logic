@@ -10,12 +10,19 @@
 # Print in all caps [upper()].
 # Print in all lower case [lower()].
 # Hyphenate the sentance [replace()].
-
+def countTrackedWord(userPhrase,trackWord):
+     wordCountOutput = userPhrase.count(trackWord)
+     return wordCountOutput
+def alphebetizedList(userPhrase):
+     
 def main():
-    print(f"\t Enter a sentance: ")
+    print(f"\t Enter a sentence: ")
     userPhrase = input()
     print(F"\t Enter a word to count: ")
     trackWord = input()
+    wordCountOutput = countTrackedWord(userPhrase,trackWord)
 
+# Outputs
+    print(f"\t Word chosen: {trackWord} \n\t Occurrences: {wordCountOutput}")
 
-
+main()
