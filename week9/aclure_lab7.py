@@ -14,7 +14,8 @@ def countTrackedWord(userPhrase,trackWord):
      wordCountOutput = userPhrase.count(trackWord)
      return wordCountOutput
 def alphebetizedList(userPhrase):
-     
+     sortedList=userPhrase.sort()
+     return sortedList
 def main():
     print(f"\t Enter a sentence: ")
     userPhrase = input()
