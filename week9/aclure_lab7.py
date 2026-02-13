@@ -13,7 +13,7 @@
 def countTrackedWord(userPhrase,trackWord):
      wordCountOutput = userPhrase.count(trackWord)
      return wordCountOutput
-def alphebetizedList(userPhrase):
+def alphabetizedList(userPhrase):
      sortedList=userPhrase.sort()
      return sortedList
 def main():
@@ -22,8 +22,10 @@ def main():
     print(F"\t Enter a word to count: ")
     trackWord = input()
     wordCountOutput = countTrackedWord(userPhrase,trackWord)
+    alphList = alphabetizedList(userPhrase)
 
 # Outputs
     print(f"\t Word chosen: {trackWord} \n\t Occurrences: {wordCountOutput}")
+    print(f"\t Alphabatical list: {alphList} ")
 
 main()
