@@ -22,10 +22,8 @@ def main():
     print(F"\t Enter a word to count: ")
     trackWord = input()
     wordCountOutput = countTrackedWord(userPhrase,trackWord)
-    sortedList = alphabetizedList(userPhrase)
 
 # Outputs
     print(f"\t Word chosen: {trackWord} \n\t Occurrences: {wordCountOutput}")
-    print(f"\t Alphabetized list: {sortedList}")
 
 main()
