@@ -1,8 +1,9 @@
 # Author : Aaron Clure
 # String and List Explorer
-# 1. Take a user input
-# 2. Demonstrate different ways to manipulate strings.
 
+
+# Take a user input
+# Demonstrate different ways to manipulate strings.
 # Count the words in the sentence [count()].
 # Alphabetize [sort()].
 # Reverse alphabetize [reverse()].
@@ -10,22 +11,11 @@
 # Print in all caps [upper()].
 # Print in all lower case [lower()].
 # Hyphenate the sentance [replace()].
-def countTrackedWord(userPhrase,trackWord):
-     wordCountOutput = userPhrase.count(trackWord)
-     return wordCountOutput
-def alphabetizedList(userPhrase):
-     sortedList=userPhrase.sort()
-     return sortedList
-def main():
-    print(f"\t Enter a sentence: ")
-    userPhrase = input()
-    print(F"\t Enter a word to count: ")
-    trackWord = input()
-    wordCountOutput = countTrackedWord(userPhrase,trackWord)
-    sortedList = alphabetizedList(userPhrase)
-
 # Outputs
-    print(f"\t Word chosen: {trackWord} \n\t Occurrences: {wordCountOutput}")
-    print(f"Alphabetized list: {alphabetizedList(userPhrase)}")
 
-main()
+
+# you need to make the string into a list before you can sort and do other list things!!!!!!!!!!!
+# newList = userInput.split()
+# inside the () is for a delimiter.  
+# If left empty any white space will be the delimiter 
+# aka where the string is broken into substrings 
