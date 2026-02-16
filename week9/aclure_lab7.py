@@ -14,8 +14,10 @@
 # Outputs
 
 
-# you need to make the string into a list before you can sort and do other list things!!!!!!!!!!!
+# you need to make the string into a list before you can sort and do other list things
+
 # newList = userInput.split()
+
 # inside the () is for a delimiter.  
 # If left empty any white space will be the delimiter 
 # aka where the string is broken into substrings 
