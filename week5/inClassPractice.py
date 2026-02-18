@@ -8,8 +8,12 @@
 # else :
 #     print(f"\t{userNum1} = {userNum2}")
 
-count = 0
-while count < 10 :
+# count = 0
+# while count <= 10 :
+#     if count%2 == 0:
+#         print(count)
+#     count = count + 1
+
+for count in range(0,11,1):
     if count%2 == 0:
         print(count)
-    count = count + 1
