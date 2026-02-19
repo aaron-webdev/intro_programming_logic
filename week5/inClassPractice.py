@@ -26,9 +26,18 @@
 #     calcSum += count
 # print(calcSum+userNum)
 
-text = "Python is fun and easy."
-total=0
-for char in text :
-    if char == "a" or char == "e" or char == "i" or char == "o" or char == "u":
-        total += 1
-print(total)
+# text = "Python is fun and easy."
+# total=0
+# for char in text :
+#     if char == "a" or char == "e" or char == "i" or char == "o" or char == "u":
+#         total += 1
+# print(total)
+
+# text = "Python is fun and easy."
+# vowels ="aeiou"
+# total=0
+# for char in text :
+#     if char.lower() in vowels:
+#         total += 1
+# print(total)
+
