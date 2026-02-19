@@ -7,7 +7,8 @@ print("\t Input a sentence, then press enter.")
 userSent = input()
 print("\t Input a word from that sentence.")
 trackedWord = input()
-splitSent = userSent.split()
+lowUserSent = userSent.lower() # Convert to all lower to ensure correct alphabetization
+splitSent = lowUserSent.split()
 
 # Number of words in the sentence
 wordCount = len(splitSent)
@@ -15,7 +16,6 @@ wordCount = len(splitSent)
 alphSent = sorted(splitSent)
 # Reverse alphabetize [reverse()].
 revAlphSent = sorted(splitSent, reverse=True)
-print(revAlphSent)
 # Count user selected word [count()].
 
 # Print in all caps [upper()].
