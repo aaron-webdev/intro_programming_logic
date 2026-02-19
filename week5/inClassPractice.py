@@ -48,11 +48,17 @@
 #     print(count)
 #     count+=2
 
-print("\t Input an integer.")
-userNum = int(input())
-count = 1
-total = 0
-while count <= userNum:
-    total+=count
-    count+=1
-print(total)
+# print("\t Input an integer.")
+# userNum = int(input())
+# count = 1
+# total = 0
+# while count <= userNum:
+#     total+=count
+#     count+=1
+# print(total)
+
+newWord=""
+while newWord.upper()!="STOP":
+    print("\t Give me a word, Ill keep asking for more words until you say 'STOP'.")
+    newWord=input()
+print("\t buh-bye!")
