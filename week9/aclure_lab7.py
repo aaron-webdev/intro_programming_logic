@@ -8,18 +8,23 @@ userSent = input()
 print("\t Input a word from that sentence.")
 trackedWord = input()
 splitSent = userSent.split()
-# Demonstrate different ways to manipulate strings.
-# Sentence length
+
+# Number of words in the sentence
 wordCount = len(splitSent)
-print(wordCount)
 # Alphabetize [sort()].
+alphSent = sorted(splitSent)
 # Reverse alphabetize [reverse()].
+revAlphSent = sorted(splitSent, reverse=True)
+print(revAlphSent)
 # Count user selected word [count()].
+
 # Print in all caps [upper()].
 # Print in all lower case [lower()].
 # Hyphenate the sentance [replace()].
 # Outputs
-
+print(f"\tWord Count: {wordCount}")
+print(f"\tAlphebatized Sentence: {alphSent}")
+print(f"\tReversed Aplabetized List: {revAlphSent}")
 
 
 
