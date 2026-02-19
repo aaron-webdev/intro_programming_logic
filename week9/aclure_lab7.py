@@ -11,6 +11,7 @@ splitSent = userSent.split()
 # Demonstrate different ways to manipulate strings.
 # Sentence length
 wordCount = len(splitSent)
+print(wordCount)
 # Alphabetize [sort()].
 # Reverse alphabetize [reverse()].
 # Count user selected word [count()].
