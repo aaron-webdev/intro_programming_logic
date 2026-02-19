@@ -3,7 +3,7 @@
 # Debug the code.  Fix any errors.
 
 # ORIGINAL CODE
-#>>>>>
+#               >>>>>
 # !/usr/bin/env python3
 # TAX = 0.06
 # def sales_tax(total)
@@ -16,7 +16,7 @@
 #     print("Total after tax: ", total_after_tax)    
 # if __name__ == "__main__":
 #     main()
-#>>>>>
+#               >>>>>
 # ORIGINAL CODE
 
 def sales_tax(total):               # Added :
