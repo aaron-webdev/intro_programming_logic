@@ -41,9 +41,18 @@
 #         total += 1
 # print(total)
 
+# print("\t Input an integer.")
+# userNum = int(input())
+# count = 1
+# while count <= userNum:
+#     print(count)
+#     count+=2
+
 print("\t Input an integer.")
 userNum = int(input())
 count = 1
+total = 0
 while count <= userNum:
-    print(count)
-    count+=2
+    total+=count
+    count+=1
+print(total)
