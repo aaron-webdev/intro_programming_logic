@@ -14,6 +14,21 @@
 #         print(count)
 #     count = count + 1
 
-for count in range(0,11,1):
-    if count%2 == 0:
-        print(count)
+# for count in range(0,11,1):
+#     if count%2 == 0:
+#         print(count)
+
+# print("\t Input an integer.")
+# userNum = int(input())
+# calcSum = 0
+# for count in range(1,userNum,1):
+#     print(f"count={count}")
+#     calcSum += count
+# print(calcSum+userNum)
+
+text = "Python is fun and easy."
+total=0
+for char in text :
+    if char == "a" or char == "e" or char == "i" or char == "o" or char == "u":
+        total += 1
+print(total)
