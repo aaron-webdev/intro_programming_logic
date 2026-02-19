@@ -57,8 +57,21 @@
 #     count+=1
 # print(total)
 
-newWord=""
-while newWord.upper()!="STOP":
-    print("\t Give me a word, Ill keep asking for more words until you say 'STOP'.")
-    newWord=input()
-print("\t buh-bye!")
+# newWord=""
+# while newWord.upper()!="STOP":
+#     print("\t Give me a word, Ill keep asking for more words until you say 'STOP'.")
+#     newWord=input()
+# print("\t buh-bye!")
+
+# Given a sentence, count how many words have 3 or fewer letters and how many have more than 3.
+sentence = "The lazy dog jumped over the brown fox."
+small = 0
+big = 0
+for word in sentence.split():
+    if len(word) <= 3:
+        small += 1
+    elif len(word) > 3:
+        big += 1
+    else:
+        print("Something went wrong.")
+print(f"\tWords 3 or fewer letters: {small}\n\tWords larger than 3 letters: {big}")
