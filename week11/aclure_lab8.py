@@ -9,3 +9,5 @@
 def main():
     class Wizard() :
         inventory = "Wooden Staff", "Wizard Hat", "Cloth Shoes"
+    print(f"{Wizard.inventory}")
+print("Hello")
