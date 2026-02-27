@@ -2,17 +2,18 @@
 # Wizard Inventory
 # Write code that keeps track and displays the invetory of a wizard
 
+invt = ["wooden staff","wizard hat","cloth shoes"]
+print(f"\nThe Wizard Inventory program\n")
+
 def main():
-    invt = ["wooden staff","wizard hat","cloth shoes"]
-    print(f"\nThe Wizard Inventory program\n")
-    print(f"COMMAND MENU:")
+    print(f"\nCOMMAND MENU:")
     print(f"show - Show all items")
     print(f"grab - Grab an item")
     print(f"edit - Edit an item")
     print(f"drop - Drop an item")
     print(f"exit - Exit program")
 
-    print(f"Command:")
+    print(f"\nCommand:")
     userCmd = input()
 
     if userCmd == "show" :
@@ -20,7 +21,6 @@ def main():
         for item in invt:
             print(f"{i}.  {item}")
             i+=1
-        main()
 
     elif userCmd == "grab":
         if len(invt) > 3:
@@ -30,7 +30,6 @@ def main():
             invt.append(input())
             lastItem = invt[-1]
             print(f"{lastItem} was added.")
-        main()
 
     elif userCmd == "edit":
         print(f"Number: ")
@@ -40,8 +39,12 @@ def main():
         newName = input()
         invt[index] = newName
         print(f"Item number {userNum} has been updated.")
-        main()
+    
+    # elif userCmd == "drop":
+    # elif userCmd == "exit":
 
+
+    main()
 
 
 
