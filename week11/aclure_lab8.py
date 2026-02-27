@@ -19,10 +19,15 @@ if userCmd == "show" :
     for item in invt:
         print(f"{i}.  {item}")
         i+=1
-        
+
 elif userCmd == "grab":
     if len(invt) == 4:
         print(f"\tYou can't carry any more items. Drop something first.")
     else:
         print(f"Name the item: ")
         invt = invt.append(input())
+        lastItem = len(invt)-1
+        print(f"{invt(lastItem)} was added.")
+
+elif userCmd == "edit":
+    print
