@@ -2,32 +2,48 @@
 # Wizard Inventory
 # Write code that keeps track and displays the invetory of a wizard
 
-invt = ["wooden staff","wizard hat","cloth shoes"]
-print(f"\n\tThe Wizard Inventory program\n")
-print(f"\tCOMMAND MENU:")
-print(f"\tshow - Show all items")
-print(f"\tgrab - Grab an item")
-print(f"\tedit - Edit an item")
-print(f"\tdrop - Drop an item")
-print(f"\texit - Exit program")
+def main():
+    invt = ["wooden staff","wizard hat","cloth shoes"]
+    print(f"\nThe Wizard Inventory program\n")
+    print(f"COMMAND MENU:")
+    print(f"show - Show all items")
+    print(f"grab - Grab an item")
+    print(f"edit - Edit an item")
+    print(f"drop - Drop an item")
+    print(f"exit - Exit program")
 
-print(f"Command:")
-userCmd = input()
+    print(f"Command:")
+    userCmd = input()
 
-if userCmd == "show" :
-    i=1
-    for item in invt:
-        print(f"{i}.  {item}")
-        i+=1
+    if userCmd == "show" :
+        i=1
+        for item in invt:
+            print(f"{i}.  {item}")
+            i+=1
 
-elif userCmd == "grab":
-    if len(invt) == 4:
-        print(f"\tYou can't carry any more items. Drop something first.")
-    else:
-        print(f"Name the item: ")
-        invt = invt.append(input())
-        lastItem = len(invt)-1
-        print(f"{invt(lastItem)} was added.")
+    elif userCmd == "grab":
+        if len(invt) > 3:
+            print(f"You can't carry any more items. Drop something first.")
+        else:
+            print(f"Name: ")
+            invt.append(input())
+            lastItem = invt[-1]
+            print(f"{lastItem} was added.")
 
-elif userCmd == "edit":
-    print
+    elif userCmd == "edit":
+        print(f"Number: ")
+        userNum = int(input())
+        index = userNum - 1
+        print(f"Updated name: ")
+        newName = input()
+        invt[index] = newName
+        print(f"Item number {userNum} has been updated.")
+        print(f"")
+
+
+
+
+
+
+if __name__ == "__main__":
+    main()
