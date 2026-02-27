@@ -20,6 +20,7 @@ def main():
         for item in invt:
             print(f"{i}.  {item}")
             i+=1
+        main()
 
     elif userCmd == "grab":
         if len(invt) > 3:
@@ -29,6 +30,7 @@ def main():
             invt.append(input())
             lastItem = invt[-1]
             print(f"{lastItem} was added.")
+        main()
 
     elif userCmd == "edit":
         print(f"Number: ")
@@ -38,7 +40,7 @@ def main():
         newName = input()
         invt[index] = newName
         print(f"Item number {userNum} has been updated.")
-        print(f"")
+        main()
 
 
 
