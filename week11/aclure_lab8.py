@@ -7,10 +7,10 @@ print(f"\nThe Wizard Inventory program\n")
 
 def main():
     print(f"\nCOMMAND MENU:")
-    print(f"show - Show all items")
-    print(f"grab - Grab an item")
-    print(f"edit - Edit an item")
-    print(f"drop - Drop an item")
+    print(f"show - Show all items")     # print items with a loop
+    print(f"grab - Grab an item")       # add items to a list
+    print(f"edit - Edit an item")       # acces an index within a list
+    print(f"drop - Drop an item")       # remove items from a list
     print(f"exit - Exit program")
 
     print(f"\nCommand:")
@@ -40,8 +40,18 @@ def main():
         invt[index] = newName
         print(f"Item number {userNum} has been updated.")
     
-    # elif userCmd == "drop":
-    # elif userCmd == "exit":
+    elif userCmd == "drop":
+        print(f"Number: ")
+        userNum = int(input())
+        index = userNum - 1
+        droppedItem = invt.pop[index]
+        print(f"{droppedItem} was dropped.")
+
+    elif userCmd == "exit":
+        exit()
+
+    else:
+        print(f"Please input a valid item number.")
 
 
     main()
