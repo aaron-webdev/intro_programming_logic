@@ -45,6 +45,7 @@ def main():
         print(f"{droppedItem} was dropped.")
 
     elif userCmd == "exit":
+        print(f"Bye!")
         exit()
 
     else:
