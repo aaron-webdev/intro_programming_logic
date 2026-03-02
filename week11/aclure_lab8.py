@@ -12,7 +12,7 @@
 
 
 
-
+#!/usr/bin/env python3
 
 def main():
     userCmd = input(f"\nCommand:")
