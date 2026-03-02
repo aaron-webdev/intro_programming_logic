@@ -3,12 +3,12 @@
 # Create a program that will convert between feet and meters upon request
 
 def feetToMeters(userNum):
-    newMeters = round(userNum * 0.3048,2)      # convert and return; 1ft = 0.3048m
+    newMeters = round(userNum * 0.3048,2)      # convert and return rounded; 1ft = 0.3048m
     print(f"\t{newMeters} meters.")
     askToRepeat()
 
 def metersToFeet(userNum):
-    newFeet = round(userNum * 3.28084,2)     # convert and return; 1m = 3.28084ft
+    newFeet = round(userNum * 3.28084,2)     # convert and return rounded; 1m = 3.28084ft
     print(f"\t{newFeet} feet.")
     askToRepeat()
 
@@ -47,4 +47,5 @@ def main():
         print("\tInvalid input. Input A or B to make a selection.")
         askToRepeat()
 
-main() # Starts program
+if __name__ == "__main__":
+    main()                             # Starts program
