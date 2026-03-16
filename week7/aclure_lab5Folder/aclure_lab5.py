@@ -2,15 +2,10 @@
 # Feet and Meter Converter
 # Create a program that will convert between feet and meters upon request
 
-def feetToMeters(userNum):
-    newMeters = round(userNum * 0.3048,2)      # convert and return rounded; 1ft = 0.3048m
-    print(f"\t{newMeters} meters.")
-    askToRepeat()
+# Create modules for functions and update code to call and return from modules.
+import aclure_feetToMeters as fTm
+import aclure_metersToFeet as mTf
 
-def metersToFeet(userNum):
-    newFeet = round(userNum * 3.28084,2)     # convert and return rounded; 1m = 3.28084ft
-    print(f"\t{newFeet} feet.")
-    askToRepeat()
 
 def askToRepeat():
     print("\tWould you like to perform another conversion? (Y/N)")       # Ask to continue
@@ -36,16 +31,17 @@ def main():
     if userChoice == "a" or userChoice == "A":
         print("\tNumber of feet?")
         userNum = float(input())      # store and pass value
-        feetToMeters(userNum)
+        newMeters = fTm.feetToMeters(userNum)
 
     elif userChoice == "b" or userChoice == "B":
         print("\tNumber of meters?")
         userNum = float(input())      # store and pass value
-        metersToFeet(userNum)
+        newFeet = mTf.metersToFeet(userNum)
 
     else:
         print("\tInvalid input. Input A or B to make a selection.")
-        askToRepeat()
+        
+    askToRepeat()
 
 if __name__ == "__main__":
     main()                             # Starts program
