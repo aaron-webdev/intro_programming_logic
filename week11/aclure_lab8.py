@@ -8,10 +8,13 @@ def main():
     userCmd = input(f"\nCommand:")
 
     if userCmd == "show" :  # loop through the list and print each item with its place number
-        i=1
-        for item in invt:
-            print(f"{i}.  {item}")
-            i+=1
+        if len(invt) == 0:
+            print(f"You are not carrying anything.")
+        else :
+            i=1
+            for item in invt:
+                print(f"{i}.  {item}")
+                i+=1
 
     elif userCmd == "grab": # limits carried items to 4
         if len(invt) > 3:
@@ -24,9 +27,12 @@ def main():
     elif userCmd == "edit":
         userNum = int(input(f"Number: "))
         index = userNum - 1 # convert from place number to list index number
-        newName = input(f"Updated name: ")
-        invt[index] = newName
-        print(f"Item number {userNum} has been updated.")
+        if userNum > len(invt):
+            print(f"Item not found.")
+        else :
+            newName = input(f"Updated name: ")
+            invt[index] = newName
+            print(f"Item number {userNum} has been updated.")
     
     elif userCmd == "drop":
         userNum = int(input(f"Number: "))
