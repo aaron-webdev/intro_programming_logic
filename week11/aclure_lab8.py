@@ -31,8 +31,11 @@ def main():
     elif userCmd == "drop":
         userNum = int(input(f"Number: "))
         index = userNum - 1
-        droppedItem = invt.pop(index) # removes specific item from 
-        print(f"{droppedItem} was dropped.")
+        if userNum > len(invt):
+            print(f"Item not found.")
+        else :
+            droppedItem = invt.pop(index) # removes specific item from 
+            print(f"{droppedItem} was dropped.")
 
     elif userCmd == "exit":
         print(f"Bye!")
