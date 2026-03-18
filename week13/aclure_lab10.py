@@ -8,3 +8,5 @@
 # 
 # f = open("file_Name.fileType")
 # print(f.read())                   will read and then print file content to the terminal
+
+#!/usr/bin/env python3
