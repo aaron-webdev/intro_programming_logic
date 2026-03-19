@@ -14,8 +14,8 @@
 
 import csv
 
-input_path = r"D:\PythonProgrammingLabs\intro_programming_logic\week13\lab10_prospects.csv"
-output_path = r"D:\PythonProgrammingLabs\intro_programming_logic\week13\lab10_prospects_clean.csv"
+input_path = r"intro_programming_logic\week13\lab10_prospects.csv"
+output_path = r"intro_programming_logic\week13\lab10_prospects_clean.csv"
 
 with (open(input_path, mode='r') as infile,
       open(output_path, mode='w', newline='') as outfile):
