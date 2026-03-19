@@ -26,6 +26,9 @@ with (open(input_path, mode='r') as infile,
     for row in reader:
         cleaned_row = [cell.strip() for cell in row] # Strip whitespace from each cell in the row
         writer.writerow(cleaned_row)
-
-print(f"New file successfully created at: {output_path}")
-print(f"Source file: {input_path}")
+print(f"\n\n")
+print(f"Welcome to the Email List Cleaner\n")
+print(f"Source list:  lab10_prospects.csv")
+print(f"Cleaned list: lab10_prospects_clean.csv ")
+print(f"\nCongratulations! Your list has been cleaned!")
+print(f"\n\n")
