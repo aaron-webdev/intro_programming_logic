@@ -14,13 +14,18 @@
 
 import csv
 
-output = "lab10_prospects_clean.csv"
-input = open("D:\\PythonProgrammingLabs\\intro_programming_logic\\week13\\lab10_prospects.csv")
+input_path = r"E:\PythonProgrammingLabs\intro_programming_logic\week13\lab10_prospects.csv"
+output_path = r"E:\PythonProgrammingLabs\intro_programming_logic\week13\lab10_prospects_clean.csv"
 
-with open(output , "w") as file :
-    writer = csv.writer(file)
-    for row in input:
-        writer.writerow(row)
+with (open(input_path, mode='r') as infile,
+      open(output_path, mode='w', newline='') as outfile):
+    
+    reader = csv.reader(infile)
+    writer = csv.writer(outfile)
+    
+    for row in reader:
+        cleaned_row = [cell.strip() for cell in row] # Strip whitespace from each cell in the row
+        writer.writerow(cleaned_row)
 
-print(f"New file created at {output}")
-print(f"File created from {input}")
+print(f"New file successfully created at: {output_path}")
+print(f"Source file: {input_path}")
