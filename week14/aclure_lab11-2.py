@@ -2,19 +2,29 @@
 # Lab 11 
 # Grade Calculator
 
-# remove redundant code with functions.
-
-def getGradeAvg(labGrades,examGrades,quizGrades):
-    # write a block that will itterate through the list of lists to total and then average the grades weighting the final average appropriately.
-    print()
+# !/usr/bin/env python3
+def getGradeAvg(allGrades):
+    all_Grades = allGrades
+    weights = [0.4,0.4,0.2]
+    averages = []
+    finalGrade = 0
     
+    for category in all_Grades:
+        catTotal = 0
+        for grade in category:
+            catTotal += grade
+            catAvg = catTotal/(len(category))
+        averages.append(catAvg)
+
+    for i in range(len(weights)):
+        finalGrade += weights[i]*averages[i]
+    return(finalGrade)
 
 def main():
     allGrades = []
     categories = ["Lab", "Exam", "Quiz"]
     userGrade = 0
     
-
     for category in categories:
         i=1
         categoryGrades = []
@@ -23,22 +33,10 @@ def main():
             categoryGrades.append(userGrade)
             i+=1
         allGrades.append(categoryGrades)
-    print(allGrades)
-
-
-
     
-    
-    # print(f"\n\n\n")
-    # for grade in labGrades:
-    #     print(f"lab grade: {grade}") 
-    
-    # for grade in examGrades:
-    #     print(f"exam grade: {grade}")
-    
-    # for grade in quizGrades:
-    #     print(f"quiz grade: {grade}")
-
+    finalGrade = round(getGradeAvg(allGrades),2)
+    print(f"\n\n\nCalculating your class grade...\n") 
+    print(f"Your overall class grade is {finalGrade}")
 
 if __name__ == "__main__":
     main()
