@@ -17,12 +17,13 @@ def main():
 
     for category in categories:
         i=1
-        gradeSum = 0
+        categoryGrades = []
         print(f"Enter your {category} grades. Enter a negative number to stop:")
         while (userGrade := float(input(f"{category} Grade {i}: "))) >= 0 :
-            gradeSum+=userGrade
+            categoryGrades.append(userGrade)
             i+=1
-            print(f"Grade Sum: {gradeSum}")
+        allGrades.append(categoryGrades)
+    print(allGrades)
 
 
 
