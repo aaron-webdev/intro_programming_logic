@@ -27,8 +27,7 @@ with (open(input_path, mode="r") as infile,
     last_name = row[1].strip().title()
     email = row[2].strip().lower()
     writer.writerow([first_name, last_name, email])
-
-
+    
 print(f"\n\n")
 print(f"Welcome to the Email List Cleaner\n")
 print(f"Source list:  lab10_prospects.csv")
