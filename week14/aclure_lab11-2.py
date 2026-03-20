@@ -2,6 +2,8 @@
 # Lab 11 
 # Grade Calculator
 
+# remove redundant code with functions.
+
 def getGradeAvg(labGrades,examGrades,quizGrades):
     i=0
     labTotal=0
@@ -32,6 +34,7 @@ def getGradeAvg(labGrades,examGrades,quizGrades):
     
 
 def main():
+    allGrades = [[labGrades],[examGrades],[quizGrades]]
     labGrades = []
     examGrades = []
     quizGrades = []
