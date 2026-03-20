@@ -18,14 +18,18 @@ input_path = r"intro_programming_logic\week13\lab10_prospects.csv"
 output_path = r"intro_programming_logic\week13\lab10_prospects_clean.csv"
 
 with (open(input_path, mode='r') as infile,
-      open(output_path, mode='w', newline='') as outfile):
+  open(output_path, mode='w', newline='') as outfile):
     
-    reader = csv.reader(infile)
-    writer = csv.writer(outfile)
+  reader = csv.reader(infile)
+  writer = csv.writer(outfile)
     
-    for row in reader:
-        cleaned_row = [cell.strip() for cell in row] # Strip whitespace from each cell in the row
-        writer.writerow(cleaned_row)
+  for row in reader:  
+    first_name = row[0].strip().title()
+    last_name  = row[1].strip().title()
+    email      = row[2].strip().lower()
+    writer.writerow([first_name, last_name, email])
+
+    
 print(f"\n\n")
 print(f"Welcome to the Email List Cleaner\n")
 print(f"Source list:  lab10_prospects.csv")
