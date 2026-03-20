@@ -24,8 +24,8 @@ with (open(input_path, mode="r") as infile,
     
   for row in reader:  
     first_name = row[0].strip().title()
-    last_name  = row[1].strip().title()
-    email      = row[2].strip().lower()
+    last_name = row[1].strip().title()
+    email = row[2].strip().lower()
     writer.writerow([first_name, last_name, email])
 
 
