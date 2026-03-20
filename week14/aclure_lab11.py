@@ -4,24 +4,30 @@
 
 def getGradeAvg(labGrades,examGrades,quizGrades):
     i=0
+    labTotal=0
     for grade in labGrades:
-        labTotal =+ grade
+        labTotal += grade
         i+=1
     labAvg = labTotal/i
+    print(labAvg)
 
     i=0
+    examTotal=0
     for grade in examGrades:
-        examTotal =+ grade
+        examTotal += grade
         i+=1
     examAvg = examTotal/i
+    print(examAvg)
 
     i=0
+    quizTotal=0
     for grade in quizGrades:
-        quizTotal =+ grade
+        quizTotal += grade
         i+=1
     quizAvg = quizTotal/i
+    print(quizAvg)
 
-    finalGrade = (labAvg*)+(testAvg*)+(quizAvg*)
+    finalGrade = round((labAvg*0.4)+(examAvg*0.4)+(quizAvg*0.2),2)
     return(finalGrade)
     
 
@@ -49,7 +55,7 @@ def main():
         i+=1
 
     finalGrade = getGradeAvg(labGrades,examGrades,quizGrades)
-    print(f"Calculating your class grade...\n\n") 
+    print(f"\n\n\nCalculating your class grade...\n") 
     print(f"Your overall class grade is {finalGrade}")
     
     
