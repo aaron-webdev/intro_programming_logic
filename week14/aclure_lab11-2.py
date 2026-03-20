@@ -13,7 +13,7 @@ def getGradeAvg(allGrades):
         catTotal = 0
         for grade in category:
             catTotal += grade
-            catAvg = catTotal/(len(category))
+        catAvg = catTotal/(len(category))
         averages.append(catAvg)
 
     for i in range(len(weights)):
