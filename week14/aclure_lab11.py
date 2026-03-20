@@ -4,12 +4,11 @@
 
 def getGradeAvg(labGrades,examGrades,quizGrades):
     i=0
-    labTotal=0
+    gradeTotal=0
     for grade in labGrades:
-        labTotal += grade
+        gradeTotal += grade
         i+=1
-    labAvg = labTotal/i
-    print(labAvg)
+    labAvg = gradeTotal/i
 
     i=0
     examTotal=0
@@ -17,15 +16,12 @@ def getGradeAvg(labGrades,examGrades,quizGrades):
         examTotal += grade
         i+=1
     examAvg = examTotal/i
-    print(examAvg)
-
     i=0
     quizTotal=0
     for grade in quizGrades:
         quizTotal += grade
         i+=1
     quizAvg = quizTotal/i
-    print(quizAvg)
 
     finalGrade = round((labAvg*0.4)+(examAvg*0.4)+(quizAvg*0.2),2)
     return(finalGrade)
