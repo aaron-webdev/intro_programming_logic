@@ -10,18 +10,21 @@ def getGradeAvg(labGrades,examGrades,quizGrades):
     
 
 def main():
-    labGrades = []
-    examGrades = []
-    quizGrades = []
-    allGrades = [[labGrades],[examGrades],[quizGrades]]
+    allGrades = []
+    categories = ["Lab", "Exam", "Quiz"]
+    userGrade = 0
+    
 
-    for category in allGrades:
-        print(f"Enter your grade. Enter a negative number to stop:")
+    for category in categories:
         i=1
-        while (userGrade := float(input(f"Lab Grade {i}: "))) >= 0 :         # gets all of user's lab grades
-            category.append(userGrade)
+        gradeSum = 0
+        print(f"Enter your {category} grades. Enter a negative number to stop:")
+        while (userGrade := float(input(f"{category} Grade {i}: "))) >= 0 :
+            gradeSum+=userGrade
             i+=1
-    print(allGrades)
+            print(f"Grade Sum: {gradeSum}")
+
+
 
     
     
