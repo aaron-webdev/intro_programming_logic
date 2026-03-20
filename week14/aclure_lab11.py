@@ -2,8 +2,28 @@
 # Lab 11 
 # Grade Calculator
 
-def getGradeAvg(labgrades,examgrades,quizgrades):
-    print(f"")
+def getGradeAvg(labGrades,examGrades,quizGrades):
+    i=0
+    for grade in labGrades:
+        labTotal =+ grade
+        i+=1
+    labAvg = labTotal/i
+
+    i=0
+    for grade in examGrades:
+        examTotal =+ grade
+        i+=1
+    examAvg = examTotal/i
+
+    i=0
+    for grade in quizGrades:
+        quizTotal =+ grade
+        i+=1
+    quizAvg = quizTotal/i
+
+    finalGrade = (labAvg*)+(testAvg*)+(quizAvg*)
+    return(finalGrade)
+    
 
 def main():
     labGrades = []
@@ -27,7 +47,11 @@ def main():
     while (userGrade := float(input(f"Quiz Grade {i}: "))) >= 0 :         # gets all of user's quiz grades
         quizGrades.append(userGrade)
         i+=1
-    getGradeAvg(labGrades,examGrades,quizGrades)
+
+    finalGrade = getGradeAvg(labGrades,examGrades,quizGrades)
+    print(f"Calculating your class grade...\n\n") 
+    print(f"Your overall class grade is {finalGrade}")
+    
     
     # print user input to check loading the arrays
     #
