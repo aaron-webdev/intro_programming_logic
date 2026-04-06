@@ -18,7 +18,7 @@ alphSent = sorted(splitSent)
 # Reverse alphabetize [reverse()].
 revAlphSent = sorted(splitSent, reverse=True)
 # Count user selected word [count()].
-wordOccurrence = lowUserSent.count(userWord)
+wordOccurrence = splitSent.count(userWord)
 # Hyphenate the sentance [replace()].
 hyphonSent = userSent.replace(" ", "-")
 
