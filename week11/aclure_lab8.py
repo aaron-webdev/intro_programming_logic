@@ -5,7 +5,7 @@
 #!/usr/bin/env python3
 
 def main():
-    userCmd = input(f"\nCommand:")
+    userCmd = input(f"\nCommand:").lower()
 
     if userCmd == "show" :  # loop through the list and print each item with its place number
         if len(invt) == 0:
