@@ -22,7 +22,7 @@ with (open(input_path, mode="r") as infile,
   reader = csv.reader(infile)
   writer = csv.writer(outfile)
     
-  for row in reader:  
+  for row in reader:  # loops and formats cells
     first_name = row[0].strip().title()
     last_name = row[1].strip().title()
     email = row[2].strip().lower()
