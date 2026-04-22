@@ -1,0 +1,2 @@
+text = Lorem(50)
+print(text)
